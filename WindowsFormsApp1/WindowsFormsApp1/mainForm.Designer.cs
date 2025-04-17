@@ -126,6 +126,7 @@
             this.Controls.Add(this.Add_Del_button);
             this.Controls.Add(this.Catalog_Prod_button);
             this.Name = "mainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ЭлектроStore";
             this.Hat.ResumeLayout(false);
             this.Hat.PerformLayout();

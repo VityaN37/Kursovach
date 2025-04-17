@@ -103,6 +103,7 @@
             this.Controls.Add(this.delete_button1);
             this.Controls.Add(this.Back_button);
             this.Name = "Delete_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -178,6 +178,7 @@
             this.Controls.Add(this.Type_comboBox1);
             this.Controls.Add(this.Back_button);
             this.Name = "Add_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Form";
             this.ResumeLayout(false);
             this.PerformLayout();

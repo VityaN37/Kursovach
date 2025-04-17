@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.Hat = new System.Windows.Forms.Panel();
+            this.Back_button = new System.Windows.Forms.Button();
             this.Electro_Store = new System.Windows.Forms.Label();
             this.Footer = new System.Windows.Forms.Panel();
+            this.emeil_2 = new System.Windows.Forms.Label();
             this.Nomber = new System.Windows.Forms.Label();
             this.Add_prod_button = new System.Windows.Forms.Button();
             this.Del_prod_button = new System.Windows.Forms.Button();
-            this.Back_button = new System.Windows.Forms.Button();
-            this.emeil_2 = new System.Windows.Forms.Label();
             this.Hat.SuspendLayout();
             this.Footer.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +50,17 @@
             this.Hat.Name = "Hat";
             this.Hat.Size = new System.Drawing.Size(800, 69);
             this.Hat.TabIndex = 3;
+            // 
+            // Back_button
+            // 
+            this.Back_button.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Back_button.Location = new System.Drawing.Point(0, 0);
+            this.Back_button.Name = "Back_button";
+            this.Back_button.Size = new System.Drawing.Size(75, 23);
+            this.Back_button.TabIndex = 7;
+            this.Back_button.Text = "Назад";
+            this.Back_button.UseVisualStyleBackColor = false;
+            this.Back_button.Click += new System.EventHandler(this.Back_button_Click);
             // 
             // Electro_Store
             // 
@@ -73,6 +84,16 @@
             this.Footer.Name = "Footer";
             this.Footer.Size = new System.Drawing.Size(800, 77);
             this.Footer.TabIndex = 4;
+            // 
+            // emeil_2
+            // 
+            this.emeil_2.AutoSize = true;
+            this.emeil_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emeil_2.Location = new System.Drawing.Point(12, 50);
+            this.emeil_2.Name = "emeil_2";
+            this.emeil_2.Size = new System.Drawing.Size(388, 18);
+            this.emeil_2.TabIndex = 6;
+            this.emeil_2.Text = "Адресс электронной почты : vitanecaev373@gmail.com";
             // 
             // Nomber
             // 
@@ -106,27 +127,6 @@
             this.Del_prod_button.UseVisualStyleBackColor = true;
             this.Del_prod_button.Click += new System.EventHandler(this.Del_prod_button_Click);
             // 
-            // Back_button
-            // 
-            this.Back_button.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Back_button.Location = new System.Drawing.Point(0, 0);
-            this.Back_button.Name = "Back_button";
-            this.Back_button.Size = new System.Drawing.Size(75, 23);
-            this.Back_button.TabIndex = 7;
-            this.Back_button.Text = "Назад";
-            this.Back_button.UseVisualStyleBackColor = false;
-            this.Back_button.Click += new System.EventHandler(this.Back_button_Click);
-            // 
-            // emeil_2
-            // 
-            this.emeil_2.AutoSize = true;
-            this.emeil_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.emeil_2.Location = new System.Drawing.Point(12, 50);
-            this.emeil_2.Name = "emeil_2";
-            this.emeil_2.Size = new System.Drawing.Size(388, 18);
-            this.emeil_2.TabIndex = 6;
-            this.emeil_2.Text = "Адресс электронной почты : vitanecaev373@gmail.com";
-            // 
             // Add_Delete_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +137,7 @@
             this.Controls.Add(this.Footer);
             this.Controls.Add(this.Hat);
             this.Name = "Add_Delete_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Delete_Form";
             this.Hat.ResumeLayout(false);
             this.Hat.PerformLayout();

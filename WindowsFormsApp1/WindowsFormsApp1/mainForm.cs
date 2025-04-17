@@ -29,6 +29,10 @@ namespace WindowsFormsApp1
             this.Hide();
             List_Form add_form = new List_Form();
             add_form.Show();
+
+           
         }
+
+    
     }
 }

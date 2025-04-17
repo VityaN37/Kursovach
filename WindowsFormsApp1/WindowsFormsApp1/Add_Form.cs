@@ -109,7 +109,7 @@ namespace WindowsFormsApp1
             MySqlCommand command = new MySqlCommand("SELECT * FROM products WHERE  id = @id ", db.getConnection());
 
             command.Parameters.Add("@id", MySqlDbType.VarChar).Value = id_textBox2.Text;
-
+ 
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
